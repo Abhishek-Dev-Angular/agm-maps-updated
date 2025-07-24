@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChange } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnChanges, OnDestroy, OnInit, Output, SimpleChange, ViewEncapsulation } from '@angular/core';
 
 import { InfoWindowManager } from '../services/managers/info-window-manager';
 
@@ -38,6 +38,7 @@ let infoWindowId = 0;
       <ng-content></ng-content>
     </div>
   `,
+  encapsulation: ViewEncapsulation.None,
 })
 export class AgmInfoWindow implements OnDestroy, OnChanges, OnInit {
   /**

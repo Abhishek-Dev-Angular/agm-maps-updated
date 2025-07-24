@@ -85,12 +85,13 @@ Angular CLI already created an app component the we'll now use to create our fir
 Open the file `src/app/app.component.ts` and modify it like below:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   title = 'My first AGM project';
