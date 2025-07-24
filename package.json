@@ -4,7 +4,7 @@
   "description": "Angular components for Google Maps",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SebastianM/angular-google-maps.git"
+    "url": "https://github.com/Abhishek-Dev-Angular/agm-maps-updated"
   },
   "keywords": [
     "angular",
@@ -35,10 +35,10 @@
     "apidocs:markerclusterer": "compodoc -p packages/markerclusterer/tsconfig.lib.json --name @agm/markerclusterer  --output docs/public/api-docs/markerclusterer/ --hideGenerator --disableCoverage",
     "apidocs:drawing": "compodoc -p packages/drawing/tsconfig.lib.json --name @agm/drawing  --output docs/public/api-docs/drawing/ --hideGenerator --disableCoverage"
   },
-  "author": "Sebastian Holstein <info@sebastian-holstein.de>",
+  "author": "Abhishek Chokra <abhi.02@yahoo.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SebastianM/angular-google-maps/issues"
+    "url": "https://github.com/Abhishek-Dev-Angular/agm-maps-updated/issues"
   },
   "homepage": "https://angular-maps.com",
   "dependencies": {

@@ -3,7 +3,7 @@
 ### <a name="submit-pr"></a> Submitting a Pull Request (PR)
 Before you submit your Pull Request (PR) consider the following guidelines:
 
-* Search [GitHub](https://github.com/SebastianM/angular-google-maps/pulls) for an open or closed PR
+* Search [GitHub](https://github.com/Abhishek-Dev-Angular/agm-maps-updated/pulls) for an open or closed PR
   that relates to your submission. You don't want to duplicate effort.
 * Make your changes in a new git branch:
 
