@@ -18,12 +18,13 @@
           <h2>Really easy to get started!</h2>
 					<pre><code>
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, Component } from '@angular/core';
+import { NgModule, Component, ViewEncapsulation } from '@angular/core';
 
 import { AgmCoreModule } from '@agm/core';
 
 @Component({
   selector: 'app-root',
+  encapsulation: ViewEncapsulation.None,
   styles: [`
     agm-map {
       height: 300px;

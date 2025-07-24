@@ -26,7 +26,7 @@ To add support the auto fit bounds feature for `<my-custom-component>`, we have 
 
 ```typescript
 import { FitBoundsAccessor, FitBoundsDetails } from '@agm/core';
-import { forwardRef, Component } from '@angular/core';
+import { forwardRef, Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'my-custom-component',
@@ -34,6 +34,7 @@ import { forwardRef, Component } from '@angular/core';
   providers: [
     {provide: FitBoundsAccessor, useExisting: forwardRef(() => MyCustomComponent)}
   ],
+  encapsulation: ViewEncapsulation.None
 })
 export class MyCustomComponent implements FitBoundsAccessor {
   **

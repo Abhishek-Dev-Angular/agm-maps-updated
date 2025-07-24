@@ -1,5 +1,5 @@
 import { isPlatformServer } from '@angular/common';
-import { AfterContentInit, Component, ContentChildren, Directive, ElementRef, EventEmitter, Inject, Input, NgZone, OnChanges, OnDestroy, Output, PLATFORM_ID, QueryList, SimpleChanges } from '@angular/core';
+import { AfterContentInit, Component, ContentChildren, Directive, ElementRef, EventEmitter, Inject, Input, NgZone, OnChanges, OnDestroy, Output, PLATFORM_ID, QueryList, SimpleChanges, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { FitBoundsService } from '../services/fit-bounds';
@@ -184,6 +184,7 @@ export class AgmZoomControl extends AgmMapControl{
                 <ng-content></ng-content>
               </div>
   `,
+  encapsulation: ViewEncapsulation.None,
 })
 export class AgmMap implements OnChanges, AfterContentInit, OnDestroy {
   /**
